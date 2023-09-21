@@ -1,0 +1,256 @@
+.title{
+  
+    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+.title h1 {
+    padding-left: 40px;
+}
+.circulo{
+    border-radius: 400px;
+    width: 180px;
+    height: 180px;
+    background-color: rgb(124, 73, 0);
+    margin: 0 auto;
+    box-shadow: 1px 1px 12px 10px #bfd105;
+    position: relative;
+    z-index: 2;
+}
+.raiz{
+    height: 255px;
+    width: 20px;
+    background-color: #399a00;
+    margin: 0 auto;
+   
+    position: relative;
+}
+.espacio-flor{
+    height: 100%;
+    width: 50%;
+    min-height: 530px;
+
+}
+
+.flor-propia{
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-left: 30%;
+    position: relative;
+}
+.padre-petalos {
+    top: -90px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cajapetalos{
+    top: 45%;
+    position: absolute;
+    width: 372px;
+    height: 277px;
+    transform: 50% , 50%;
+    z-index: 1;
+    animation: cajapetalosanimacion 20s linear infinite forwards; 
+}
+.petalos{
+    background-color: yellow;
+    height: 130px;
+    width: 100px;
+    clip-path: ellipse(25% 50% at 50% 50%);
+    animation: petalosAnimation 700ms linear forwards; 
+    opacity: 0;
+    
+}
+.petalos:nth-child(1){
+  background-color: yellow;    
+  position: absolute;
+  left: 34%;
+  transform: translate(0%, 10px);
+  animation-delay: 1s; /* Retardo de medio segundo */
+
+}
+.petalos:nth-child(2){
+    top: 15px;
+    transform: rotate(330deg);
+    background-color: yellow;
+    position: absolute;
+    left: 25%;
+    animation-delay: 1.4s; /* Retardo de 1 segundo */
+}
+.petalos:nth-child(3){
+    top: 45px;
+    transform: rotate(312deg);
+    background-color: yellow;
+    position: absolute;
+    left: 17%;
+    animation-delay: 1.8s; /* Retardo de 1 segundo */
+}
+.petalos:nth-child(4){
+    top: 15px;
+    transform: rotate(330deg);
+    background-color: yellow;
+    position: absolute;
+    left: 25%;
+    animation-delay: 2.2s; /* Retardo de 1 segundo */
+}
+.petalos:nth-child(5){
+    top: 90px;
+    transform: rotate(266deg);
+    background-color: yellow;
+    position: absolute;
+    left: 16%;
+    animation-delay: 2.6s; /* Retardo de 1 segundo */
+}
+.petalos:nth-child(6){
+    top: 130px;
+    transform: rotate(237deg);
+    background-color: yellow;
+    position: absolute;
+    left: 20%;
+    animation-delay: 3s; /* Retardo de 1 segundo */
+}
+.petalos:nth-child(7){
+    top: 146px;
+    transform: rotate(206deg);
+    background-color: yellow;
+    position: absolute;
+    left: 29%;
+    animation-delay: 3.4s; /* Retardo de 1 segundo */
+}
+
+
+.petalos:nth-child(8){
+    top: 151px;
+    transform: rotate(2deg);
+    background-color: yellow;
+    position: absolute;
+    left: 37%;
+    animation-delay: 3.8s; /* Retardo de 1 segundo */
+
+}
+.petalos:nth-child(9){
+    top: 146px;
+    transform: rotate(333deg);
+    background-color: yellow;
+    position: absolute;
+    left: 43%;
+    animation-delay: 4.2s; /* Retardo de 1 segundo */
+}
+.petalos:nth-child(10){
+    top: 129px;
+    transform: rotate(316deg);
+    background-color: yellow;
+    position: absolute;
+    left: 54%;
+    animation-delay: 4.6s;
+}
+.petalos:nth-child(11){
+    top: 90px;
+    transform: rotate(266deg);
+    background-color: yellow;
+    position: absolute;
+    left: 58%;
+    animation-delay: 5.6s;
+}
+.petalos:nth-child(12){
+    top: 40px;
+    transform: rotate(243deg);
+    background-color: yellow;
+    position: absolute;
+    left: 54%;
+    animation-delay: 5.4s; /* Retardo de 1 segundo */
+}
+.petalos:nth-child(13){
+    top: 15px;
+    transform: rotate(31deg);
+    background-color: yellow;
+    position: absolute;
+    left: 45%;
+    animation-delay: 5.8s; /* Retardo de 1 segundo */
+}
+
+  @keyframes petalosAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+
+        opacity: 1;
+    }
+  }
+
+  @keyframes cajapetalosanimacion {
+    0% {
+        transform: rotate(0deg);
+
+        top: 7%;
+    }
+    100% {
+        transform: rotate(360deg);
+
+        top: 7%;
+    }
+  }
+
+  a{
+    margin: 0 auto;
+    color: white;
+    width: 199px;
+    height: 150px;
+    /* background: green; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15px;
+    /* box-shadow: 1px 1px 11px 3px #c3c3c3; */
+    font-size: 36px;
+    font-weight: 800;
+    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    left: 129px;
+    color: green;
+    transform: rotate(341deg);
+
+  }
+  .contenido{
+    display: flex;
+  
+  }
+body{
+    background-image: url(./img/fondo.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+.flor-propia{
+    display: none;
+    animation: animation-flor 700ms linear forwards; 
+    opacity: 0;
+}
+
+@keyframes animation-flor {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+  }
+
+
+  .panda{
+    background-image: url(./img/panda.png);
+    background-size: cover;
+    width: 550px;
+    height: 430px;
+    position: relative;
+  }
